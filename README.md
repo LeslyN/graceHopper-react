@@ -87,12 +87,12 @@ La página tiene estilos para sus 4 componentes:
 
 ```css
 header h1{
-	margin-bottom: .4em;
+  margin-bottom: .4em;
 }
 
 header hr{
-	margin-top: 0;
-	margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 ```
 
