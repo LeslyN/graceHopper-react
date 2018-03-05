@@ -8,9 +8,7 @@ Debería verse de la siguiente manera:
 
 ```
 grace-h-react/
-  README.md
   node_modules/
-  package.json
   public/
     index.html
     favicon.ico
@@ -32,6 +30,9 @@ grace-h-react/
     index.css
     index.js
     logo.svg
+    .gitignore
+    package.json
+    README.md
 ```
 
 ## Componentes
