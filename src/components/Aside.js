@@ -22,7 +22,7 @@ class Aside extends Component {
               </td>
             </tr>
             <tr >
-              <th colspan={3} className="text-center info-table">Informaci&oacute;n Personal</th>
+              <th colspan={3} className="text-center info-table">Personal Information</th>
             </tr>
             <tr>
               <th className="text-left">Nickname(s)</th>

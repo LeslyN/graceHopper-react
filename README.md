@@ -38,10 +38,13 @@ grace-h-react/
 
 La página se ha desarrollado con 4 componentes:
 
-- App.js
-- Header.js
-- Main.js
-- Aside.js
+- App.js: componente que contiene a 3 componentes en él como son Header.js, Main.js, Aside.js 
+
+- Header.js: componente Header, este componente es la cabecera de la p&aacute;gina, se encuentran insertadas las etiquetas `<header></header>` y dentro de ella la etiqueta `<h1></h1>` conteniendo el título. 
+
+- Main.js: componente Main, este componente es el cuerpo de la p&aacute;gina, se encuentra la etiqueta `<main></main>` la cual contiene la biograf&iacute;a de Grace Munrray Hopper.
+
+- Aside.js: componente Aside, en este componente se encuentra la etiqueta `<aside></aside>` la cual contiene informaci&oacute;n personal de Grace Munrray Hopper.
 
 ## Importando componentes
 
@@ -79,33 +82,31 @@ La página tiene estilos para sus 4 componentes:
 - header.css
 - main.css
 
-### `Button.css`
+### `Header.css`
 
 ```css
-.Button {
-  padding: 20px;
+header h1{
+	margin-bottom: .4em;
+}
+
+header hr{
+	margin-top: 0;
+	margin-bottom: 0;
 }
 ```
 
-### `Button.js`
+### `Header.js`
 
 ```js
 import React, { Component } from 'react';
-import './Button.css'; // Tell Webpack that Button.js uses these styles
+import './css/header.css';
 
-class Button extends Component {
+class Header extends Component {
   render() {
-    // You can use them as regular CSS styles
-    return <div className="Button" />;
+    return (
+      //Código
+    );
   }
-}
-```
-
-```css
-.App {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 ```
 
@@ -136,3 +137,7 @@ Abra su `package.json` y agregue un campo ` homepage` para su proyecto::
   "homepage": "https://LeslyN.github.io/grace-h-react",
 ```
 La aplicación Create React usa el campo `homepage` para determinar la URL raíz en el archivo HTML creado.
+
+# Anexos
+
+![resultado](src/components/docs/resultado.png "resultado")
