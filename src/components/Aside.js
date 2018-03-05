@@ -8,38 +8,37 @@ class Aside extends Component {
     return (
       <aside className="summary">
 		    <table className="summary-table">
-			    <thead>
+			    <thead className="info-table">
 				    <tr>
-					    <th colspan={2}>Grace Murray Hopper</th>
+					    <th colspan={3}>Grace Murray Hopper</th>
 				    </tr>
 			    </thead>
 
 			    <tbody>
             <tr>
-              <td colspan={2}>
-                <img src={GraceHopper} alt="Grace Murray Hopper"/>
+              <td colspan={3}>
+                <img src={GraceHopper} className="img-responsive image text-center" alt="Grace Murray Hopper"/>
                 <p>Rear admiral Grace M. Hopper, 1984</p>
-                <hr/>
               </td>
             </tr>
             <tr >
-              <th colspan={2}>Informaci&oacute;n Personal</th>
+              <th colspan={3} className="text-center info-table">Informaci&oacute;n Personal</th>
             </tr>
             <tr>
-              <th>Nickname(s)</th>
-              <td>"Amazing Grace"</td>
+              <th className="text-left">Nickname(s)</th>
+              <td colspan={2} className="text-justify">"Amazing Grace"</td>
             </tr>
             <tr>
-              <th>Born</th>
-              <td>December 9, 1906 New York City, New York, U.S. </td>
+              <th className="text-left">Born</th>
+              <td colspan="{2}" className="text-justify">December 9, 1906 New York City, New York, U.S.</td>
             </tr>
             <tr>
-              <th>Died</th>
-              <td>January 1, 1992 (aged 85)</td>
+              <th className="text-left">Died</th>
+              <td colspan="{2}" className="text-justify">January 1, 1992 (aged 85)</td>
             </tr>
           <tr>
-            <th>Allegiance</th>
-            <td><img src={eeuu} alt="EEUU"/> United States of America</td>
+            <th className="text-left">Allegiance</th>
+            <td className="text-justify"><img src={eeuu} alt="EEUU"/> United States of America</td>
           </tr>
 			    </tbody>
 		    </table>

@@ -9,10 +9,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <Main/>
-        <Aside/>
+      <div className="App container-fluid">
+        <div className="col-12">
+          <Header/>
+          <Main/>
+          <Aside/>
+        </div>
       </div>
     );
   }

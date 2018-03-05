@@ -1,0 +1,53 @@
+body main{
+  font-size: 0.875em;
+  line-height: 1.6;
+  margin-top: 0;
+  padding: 1em;
+  max-width: 100%;
+}
+
+.biography{
+	display: inline-block;
+	width: 75%; 
+	font-size: 14px;
+}
+
+.list-num {
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  display: table;
+  line-height: 1.6;
+  padding: .5em;
+}
+
+li {
+  margin-bottom: 0.1em;
+  display: list-item;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Linux Libertine','Georgia','Times',serif;
+  line-height: 1.3;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  padding: 0;
+}
+
+ol {
+  counter-reset: item;
+  margin-left: 0;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol ol > li {
+  display: block;
+}
+
+ol ol > li:before {
+  content: counters(item, ".") ". ";
+  margin-left: .1em;
+}
